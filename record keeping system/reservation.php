@@ -43,7 +43,7 @@
                 <div class="mb-3 text-white fw-normal">
                 <label for="time" class="form-label">How Many People</label>
                 <select name="people" class="form-control" id="people" required>
-                        <option value=""><---People---></option>
+                        <option value="">People</option>
                         <option value="1">1 People</option>
                         <option value="2">2 People</option>
                         <option value="3">3 People</option>
