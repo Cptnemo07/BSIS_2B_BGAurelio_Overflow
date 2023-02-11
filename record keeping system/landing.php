@@ -17,6 +17,16 @@
     transform: scale(1.1);
     overflow-y: hidden;
    }
+   
+   .c-item{
+    height: 580px;
+   }
+
+   .c-img{
+    height: 120%;
+    object-fit: cover;
+    filter: brightness(0.6);
+   }
 
     </style>
  </head>
@@ -46,31 +56,52 @@
        <!--Section1-->
 
        <section class="bg-dark pb-1 text-center text-light">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div id="carouselDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/img5.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-light">First slide label</h5>
-                  <p class="text-light">Some representative placeholder content for the first slide.</p>
+              <div class="carousel-item active c-item">
+                <img src="img/img5.jpg" class="d-block w-100 c-img" alt="slide 1">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <p class="text-light mt-5 fs-3 text-uppercase">Discover Thai seafood</p>
+                  <h1 class="text-light display-1 fw-bolder text-capitalize">Thai Tanic</h1>
+                  <a href="reservation.php" class="">
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">book now</button>
+                  </a> 
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/img2.jpg" class="d-block w-100 text-light" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-light">Second slide label</h5>
-                  <p class="text-light">Some representative placeholder content for the second slide.</p>
+              <div class="carousel-item c-item">
+                <img src="img/img2.jpg" class="d-block w-100 c-img" alt="slide 2">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <p class="text-light mt-5 fs-3 text-uppercase">Discover Thai seafood</p>
+                  <h1 class="text-light display-1 fw-bolder text-capitalize">Thai Tanic</h1>
+                  <a href="reservation.php" class="">
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">book now</button>
+                  </a> 
                 </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/img3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 class="text-light">Third slide label</h5>
-                  <p class="text-light">Some representative placeholder content for the third slide.</p>
+              <div class="carousel-item c-item">
+                <img src="img/img3.jpg" class="d-block w-100 c-img" alt="slide 3">
+                <div class="carousel-caption top-0 mt-4 d-none d-md-block">
+                  <p class="text-light mt-5 fs-3 text-uppercase">Discover Thai seafood</p>
+                  <h1 class="text-light display-1 fw-bolder text-capitalize">Thai Tanic</h1>
+                  <a href="reservation.php" class="">
+                  <button class="btn btn-primary px-4 py-2 fs-5 mt-5">book now</button>
+                  </a> 
                 </div>
               </div>
             </div>
-           
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
        </section>
   
