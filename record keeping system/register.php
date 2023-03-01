@@ -1,7 +1,7 @@
 <?php
 require 'connect.php';
 if(!empty($_SESSION["id"])){
-  header("Location: landing.php");
+  header("Location: index.php");
 }
 if(isset($_POST["submit"])){
   $name = $_POST["name"];
@@ -16,7 +16,7 @@ if(isset($_POST["submit"])){
   }
   else{
     if($password == $confirmpassword){
-      $query = "INSERT INTO attendance_records VALUES('$name','$username','$email','$password')";
+      $query = "INSERT INTO attendance_records ( `name`, `username`, `email`, `password`) VALUES('$name','$username','$email','$password')";
       mysqli_query($conn, $query);
       echo
       "<script> alert('Registration Successful'); </script>";
@@ -36,7 +36,7 @@ if(isset($_POST["submit"])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
-    <link rel="stylesheet" type="text/css" href="style4.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css">
     <title>register</title>
 </head>
 <body>
@@ -54,7 +54,7 @@ if(isset($_POST["submit"])){
 
                 <div class="form-outline mb-4">
                 <label class="form-label" for="form3Example1cg">Name</label> 
-                <input type="text" id="form3Example1cg" class="form-control form-control-lg" required/>
+                <input type="text" name="name" id="name" class="form-control form-control-lg" required/>
                 </div>
 
                 <div class="form-outline mb-4">

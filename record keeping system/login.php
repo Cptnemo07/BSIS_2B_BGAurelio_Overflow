@@ -1,7 +1,7 @@
 <?php
 require 'connect.php';
 if(!empty($_SESSION["id"])){
-  header("Location: landing.php");
+  header("Location: index.php");
 }
 if(isset($_POST["submit"])){
   $usernameemail = $_POST["usernameemail"];
@@ -12,7 +12,7 @@ if(isset($_POST["submit"])){
     if($password == $row['password']){
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
-      header("Location: landing.php");
+      header("Location: client.php");
     }
     else{
       echo
@@ -35,9 +35,20 @@ if(isset($_POST["submit"])){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
     <link rel="stylesheet" type="text/css" href="style3.css">
+    <style>
+      section {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+    
 </head>
 <body>
-<section class="vh-100">
+
+
+
+<section>
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-5">
