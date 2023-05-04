@@ -1,0 +1,24 @@
+#neubar {
+    background-image: linear-gradient(to left, #e989e9, #d36fda, #bd55cb, #a73abd, #8f18af);
+  }
+
+  
+  #neubar .dropdown-menu a:hover {
+    color: #454545
+  }
+  #neubar .nav-item {
+    margin : auto 4px;
+  }
+  #neubar a {
+  
+    padding-left:12px;
+    padding-right:12px;
+  }
+  #neubar .dropdown-menu {
+    background : #545454
+  }
+  a.navbar-brand {
+    color: #454545
+  }
+
+  
